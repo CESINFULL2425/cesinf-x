@@ -1,5 +1,6 @@
 ---
 import AnimatedCard from "../components/AnimatedCard.astro";
+import BlueButton from "../components/BlueButton.astro";
 import PinkButton from "../components/PinkButton.astro";
 import SocialMedia from "../components/SocialMedia.astro";
 import Title from "../components/Title.astro";
@@ -13,9 +14,12 @@ import Layout from "../layouts/Layout.astro";
       <h2 class="text-white">Coming soon</h2>
       <h3 class="text-color">30 y 31 de enero, 2025</h3>
     </div>
-    <PinkButton href="https://forms.gle/jXJjxjCgbmp6ExTZ9">
-      Call x papers
-    </PinkButton>
+    <div class="container">
+      <BlueButton href="https://ix.cesinfull.com/"> Edición pasada </BlueButton>
+      <PinkButton href="https://forms.gle/jXJjxjCgbmp6ExTZ9">
+        Call x papers
+      </PinkButton>
+    </div>
     <SocialMedia />
   </AnimatedCard>
 </Layout>
@@ -28,5 +32,10 @@ import Layout from "../layouts/Layout.astro";
   .text-color {
     margin: 8px;
     color: #f673ff;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 </style>
