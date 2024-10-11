@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="El Congreso de Estudiantes de Ingeniería Informática es un evento
+      que se celebra anualmente en la Escuela Superior de Ingeniería y
+      Tecnología de la Universidad de La Laguna, organizado por
+      estudiantes del grado de Ingeniería Informática. Nuestro objetivo es
+      dar a conocer nuevas tecnologías, aportar conocimiento e
+      intercambiar ideas de la mano de profesionales de la informática así
+      como del propio alumnado, a través de conferencias, presentaciones
+      de proyectos, talleres y ¡mucho más!"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Cesinf X</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: Aristotelica;
+    src: url("aristotelica.ttf");
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, sans-serif;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
