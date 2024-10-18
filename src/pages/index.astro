@@ -1,41 +1,7 @@
 ---
-import AnimatedCard from "../components/AnimatedCard.astro";
-import BlueButton from "../components/BlueButton.astro";
-import PinkButton from "../components/PinkButton.astro";
-import SocialMedia from "../components/SocialMedia.astro";
-import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <AnimatedCard>
-    <Title />
-    <div>
-      <h2 class="text-white">Coming soon</h2>
-      <h3 class="text-color">30 y 31 de enero, 2025</h3>
-    </div>
-    <div class="container">
-      <BlueButton href="https://ix.cesinfull.com/"> Edición pasada </BlueButton>
-      <PinkButton href="https://forms.gle/jXJjxjCgbmp6ExTZ9">
-        Call x papers
-      </PinkButton>
-    </div>
-    <SocialMedia />
-  </AnimatedCard>
+  <div>Content</div>
 </Layout>
-
-<style>
-  .text-white {
-    font-weight: 900;
-    margin: 8px;
-  }
-  .text-color {
-    margin: 8px;
-    color: #f673ff;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-</style>
