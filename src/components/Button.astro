@@ -1,0 +1,32 @@
+---
+interface Props {
+  href?: string;
+  background_start?: string;
+  background_end?: string;
+}
+
+const { href, background_start = '#5821da', background_end = '#176e99' } = Astro.props;
+---
+
+<a href={href} style={`background-image: linear-gradient(${background_start}, ${background_end});`}>
+  <slot />
+</a>
+
+<style>
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Aristotelica;
+    font-size: larger;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition-duration: 600ms;
+  }
+
+  a:hover {
+    border: 2px solid #6da5ff;
+    box-shadow: 0 0 12px 6px rgba(255, 255, 255, 0.2);
+  }
+</style>
