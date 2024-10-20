@@ -3,12 +3,13 @@ interface Props {
   href?: string;
   background_start?: string;
   background_end?: string;
+  hover_border?: string;
 }
 
-const { href, background_start = '#5821da', background_end = '#176e99' } = Astro.props;
+const { href, background_start = '#5821da', background_end = '#176e99', hover_border = '#6da5ff' } = Astro.props;
 ---
 
-<a href={href} style={`background-image: linear-gradient(${background_start}, ${background_end});`}>
+<a href={href} style={`background-image: linear-gradient(${background_start}, ${background_end}); --border-color: ${hover_border};`}>
   <slot />
 </a>
 
@@ -26,7 +27,7 @@ const { href, background_start = '#5821da', background_end = '#176e99' } = Astro
   }
 
   a:hover {
-    border: 2px solid #6da5ff;
+    border: 2px solid var(--border-color);
     box-shadow: 0 0 12px 6px rgba(255, 255, 255, 0.2);
   }
 </style>
