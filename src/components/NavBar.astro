@@ -1,0 +1,126 @@
+---
+import CesinfIcon from "./icons/CesinfIcon.astro";
+import HamburgerIcon from "./icons/HamburgerIcon.astro";
+import Link from "./Link.astro";
+
+interface Props {
+  paths: { name: string; path: string }[];
+}
+
+const { paths } = Astro.props;
+---
+
+<nav>
+  <section class="logo">
+    <Link href="#main">
+      <div class="logo-container">
+        <CesinfIcon />
+        <span>CESINF IX</span>
+      </div>
+    </Link>
+    <button id="navbar_collapsible">
+      <HamburgerIcon />
+    </button>
+  </section>
+  <section class="paths" id="navbar_links">
+    {paths.map(({ name, path }) => <Link href={path}>{name}</Link>)}
+  </section>
+</nav>
+
+<style>
+  nav {
+    padding: 20px 40px;
+    width: calc(100% - 80px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+  }
+
+  section,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-container span {
+    text-wrap: nowrap;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  button {
+    display: none;
+    color: gray;
+    outline: none;
+    background: none;
+    border: none;
+    transition-duration: 600ms;
+  }
+
+  button:hover {
+    color: white;
+  }
+
+  .paths {
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    nav {
+      flex-direction: column;
+      padding: 20px;
+      width: calc(100% - 40px);
+    }
+
+    button {
+      display: flex;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .paths {
+      display: none;
+    }
+
+    .paths.active {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #505050;
+      padding-top: 20px;
+    }
+  }
+</style>
+
+<script>
+  const button = document.getElementById("navbar_collapsible");
+  const links = document.getElementById("navbar_links");
+
+  button?.addEventListener("click", () => {
+    links?.classList.toggle("active");
+  });
+
+  document.addEventListener("scrollend", () => {
+    links?.classList.remove("active");
+  });
+</script>

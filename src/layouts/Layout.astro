@@ -13,7 +13,7 @@
       como del propio alumnado, a través de conferencias, presentaciones
       de proyectos, talleres y ¡mucho más!"
     />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <link rel="icon" href="logo.svg" type="image/svg+xml" />
     <meta name="generator" content={Astro.generator} />
     <title>Cesinf X</title>
@@ -27,8 +27,9 @@
   body {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
+    min-height: 100%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
   }
 </style>
