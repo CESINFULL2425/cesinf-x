@@ -1,9 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import NavBar from "../components/NavBar.astro";
+
+const navigation = [
+  {
+    name: "Page 2",
+    path: "#page_2",
+  },
+  {
+    name: "Page 3",
+    path: "#page_3",
+  },
+  {
+    name: "Page 4",
+    path: "#page_4",
+  },
+];
 ---
 
 <Layout title="Welcome to Astro.">
-  <div>Content</div>
+  <NavBar paths={navigation} />
+  <PageLayout id="main">
+    <h1>Page 1</h1>
+  </PageLayout>
+  <PageLayout id="page_2">
+    <h1>Page 2</h1>
+  </PageLayout>
+  <PageLayout id="page_3">
+    <h1>Page 3</h1>
+  </PageLayout>
+  <PageLayout id="page_4">
+    <h1>Page 4</h1>
+  </PageLayout>
   <Footer />
 </Layout>
