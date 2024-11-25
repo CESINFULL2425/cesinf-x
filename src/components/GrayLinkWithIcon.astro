@@ -12,15 +12,18 @@ const { href } = Astro.props;
 
 <style>
   a {
-    color: gray;
-    fill: gray;
-    transition-duration: 600ms;
+    color: grey;
+    fill: grey;
     text-decoration: none;
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 5px;
+    transition-duration: 600ms;
+    font-size: smaller;
   }
 
   a:hover {
-    color: white;
-    fill: white;
-    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.4));
+    text-decoration: underline;
   }
 </style>
