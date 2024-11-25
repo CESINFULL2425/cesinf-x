@@ -10,14 +10,14 @@ interface Props {
 const { paths } = Astro.props;
 ---
 
-<nav>
+<nav id="navbar">
   <section class="logo">
     <Link href="#main">
-      <div class="logo-container">
-        <CesinfIcon />
-        <span>CESINF IX</span>
-      </div>
+      <CesinfIcon />
     </Link>
+    <section class="mobile_buy_ticket">
+      <a>Compra tu entrada</a>
+    </section>
     <button id="navbar_collapsible">
       <HamburgerIcon />
     </button>
@@ -25,19 +25,30 @@ const { paths } = Astro.props;
   <section class="paths" id="navbar_links">
     {paths.map(({ name, path }) => <Link href={path}>{name}</Link>)}
   </section>
+  <section class="desktop_buy_ticket">
+    <!-- TODO: add "buy your ticket" component  -->
+    <a>Compra tu entrada</a>
+  </section>
 </nav>
 
 <style>
   nav {
-    padding: 20px 40px;
-    width: calc(100% - 80px);
+    padding: 20px;
+    width: calc(100% - 40px);
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: black;
+    background: transparent;
+    transition: all 600ms;
+  }
+
+  nav.blur {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #505050;
   }
 
   section,
@@ -49,20 +60,6 @@ const { paths } = Astro.props;
 
   .logo {
     justify-content: space-between;
-  }
-
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo-container span {
-    text-wrap: nowrap;
-    font-weight: bolder;
-    color: white;
-    font-size: 1.5rem;
   }
 
   button {
@@ -78,17 +75,19 @@ const { paths } = Astro.props;
     color: white;
   }
 
+  .mobile_buy_ticket {
+    display: none;
+  }
+
   .paths {
-    justify-content: end;
-    gap: 20px;
-    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    flex-grow: 1;
   }
 
   @media (max-width: 500px) {
     nav {
       flex-direction: column;
-      padding: 20px;
-      width: calc(100% - 40px);
     }
 
     button {
@@ -107,12 +106,22 @@ const { paths } = Astro.props;
       display: flex;
       flex-direction: column;
       border-top: 1px solid #505050;
+      width: 100%;
       padding-top: 20px;
+    }
+
+    .desktop_buy_ticket {
+      display: none;
+    }
+
+    .mobile_buy_ticket {
+      display: block;
     }
   }
 </style>
 
 <script>
+  const navbar = document.getElementById("navbar");
   const button = document.getElementById("navbar_collapsible");
   const links = document.getElementById("navbar_links");
 
@@ -120,7 +129,12 @@ const { paths } = Astro.props;
     links?.classList.toggle("active");
   });
 
-  document.addEventListener("scrollend", () => {
+  document.addEventListener("scroll", () => {
     links?.classList.remove("active");
+  });
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 0) navbar?.classList.add("blur");
+    else navbar?.classList.remove("blur");
   });
 </script>
