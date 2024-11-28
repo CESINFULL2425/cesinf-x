@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import NavBar from "../components/NavBar.astro";
+import Hero from "../views/Hero.astro";
 
 const navigation = [
   {
@@ -22,9 +23,7 @@ const navigation = [
 
 <Layout title="Welcome to Astro.">
   <NavBar paths={navigation} />
-  <PageLayout id="main">
-    <h1>Page 1</h1>
-  </PageLayout>
+  <Hero />
   <PageLayout id="page_2">
     <h1>Page 2</h1>
   </PageLayout>

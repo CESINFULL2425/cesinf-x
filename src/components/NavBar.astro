@@ -12,7 +12,7 @@ const { paths } = Astro.props;
 
 <nav id="navbar">
   <section class="logo">
-    <Link href="#main">
+    <Link href="#">
       <CesinfIcon />
     </Link>
     <section class="mobile_buy_ticket">
@@ -42,13 +42,14 @@ const { paths } = Astro.props;
     align-items: center;
     gap: 20px;
     background: transparent;
+    border-bottom: 2px solid transparent;
     transition: all 600ms;
   }
 
   nav.blur {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
-    border-bottom: 1px solid #505050;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
   }
 
   section,
@@ -81,11 +82,11 @@ const { paths } = Astro.props;
 
   .paths {
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     flex-grow: 1;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 640px) {
     nav {
       flex-direction: column;
     }
