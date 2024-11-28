@@ -145,6 +145,17 @@ import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
     cursor: pointer;
   }
 
+  @media (max-width: 1024px) {
+    .background {
+      background-image: url(/hero_background_mobile.webp);
+    }
+
+    .container {
+      background-image: linear-gradient(#000, transparent 20%, 80%, #000),
+        radial-gradient(circle at 100% 100%, transparent, #000 90%);
+    }
+  }
+
   @media (max-width: 640px) {
     .container {
       width: calc(100% - 40px);
