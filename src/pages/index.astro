@@ -4,11 +4,12 @@ import Footer from "../components/Footer.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import NavBar from "../components/NavBar.astro";
 import Hero from "../views/Hero.astro";
+import Sponsors from "../views/Sponsors.astro";
 
 const navigation = [
   {
-    name: "Page 2",
-    path: "#page_2",
+    name: "Patrocinadores",
+    path: "#Patrocinadores",
   },
   {
     name: "Page 3",
@@ -24,9 +25,7 @@ const navigation = [
 <Layout title="Welcome to Astro.">
   <NavBar paths={navigation} />
   <Hero />
-  <PageLayout id="page_2">
-    <h1>Page 2</h1>
-  </PageLayout>
+  <Sponsors />
   <PageLayout id="page_3">
     <h1>Page 3</h1>
   </PageLayout>

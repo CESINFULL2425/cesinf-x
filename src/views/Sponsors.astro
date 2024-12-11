@@ -1,0 +1,20 @@
+---
+import SponsorCard from "../components/SponsorCard.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout id="Patrocinadores">
+  <div class="content">
+    <SponsorCard image="/sponsors/inetel.png" size="300px" />
+  </div>
+</PageLayout>
+
+<style>
+  .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
