@@ -2,6 +2,7 @@
 import BuildingIcon from "../components/icons/BuildingIcon.astro";
 import MapIcon from "../components/icons/MapIcon.astro";
 import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
+import BuyTicket from "../components/BuyTicket.astro";
 ---
 
 <div class="background"></div>
@@ -10,9 +11,9 @@ import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
     <h1>CESINF X</h1>
     <h2 class="subtitle">10 º aniversario</h2>
     <p style="text-wrap: balance;">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed esse fugiat
-      molestiae veritatis dolor iusto impedit magni necessitatibus repellat
-      dolore.
+      Conferencias, talleres, proyectos... ¡y mucho más! Vive una experiencia
+      única en el mundo de la tecnología. Conecta con profesionales y
+      estudiantes apasionados. ¡No te pierdas el evento más esperado del año!
     </p>
     <div class="subcontent">
       <div class="box">
@@ -30,7 +31,7 @@ import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
           <MapIcon width="20" height="20" />
           Avenida Astrofísico Francisco Sánchez, s/n
         </GrayLinkWithIcon>
-        <button>Compra tu entrada</button>
+        <BuyTicket />
       </ul>
     </div>
   </article>
@@ -99,7 +100,7 @@ import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
 
   p,
   small {
-    color: gray;
+    color: #bbb;
   }
 
   .box {
@@ -132,27 +133,14 @@ import GrayLinkWithIcon from "../components/GrayLinkWithIcon.astro";
     list-style: none;
   }
 
-  button {
-    margin-top: auto;
-    outline: none;
-    background-image: linear-gradient(to bottom right, #7303c0, #ec38bc);
-    font-size: 1rem;
-    border: none;
-    font-weight: bold;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-
   @media (max-width: 1024px) {
     .background {
       background-image: url(/backgrounds/hero_background_mobile.webp);
     }
 
     .container {
-      background-image: linear-gradient(#000, transparent 20%, 80%, #000),
-        radial-gradient(circle at 100% 100%, transparent, #000 90%);
+      background-image: linear-gradient(#000, #00000027 20%, 80%, #000),
+        radial-gradient(circle at 100% 100%, #00000027, #000 90%);
     }
   }
 
