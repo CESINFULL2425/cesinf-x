@@ -7,10 +7,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     style="display: flex; height: 100%; width: 100%; align-items: start; justify-content: center;"
   >
     <div class="grid">
-      <div
-        class="bento-item"
-        style="grid-column: span 2; grid-row: span 2; background-color: #171717; padding: 0 2rem;"
-      >
+      <div id="bento-description" class="bento-item bento-text">
         <h1>¿Quiénes somos?</h1>
         <p>
           El Congreso de Estudiantes de Ingeniería Informática es un evento que
@@ -20,26 +17,24 @@ import PageLayout from "../layouts/PageLayout.astro";
         </p>
       </div>
 
-      <div class="bento-item" style="grid-column: span 2; grid-row: span 2;">
+      <div id="bento-main" class="bento-item">
         <div class="image" style="background-image: url(/bento_0.jpg);"></div>
       </div>
 
-      <div class="bento-item" style="grid-column: span 2; grid-row: span 4;">
+      <div id="bento-second" class="bento-item">
         <div class="image" style="background-image: url(/bento_1.jpg);"></div>
       </div>
 
-      <div
-        class="bento-item bento-small"
-        style="grid-column: span 1; grid-row: span 4; "
-      >
-        <div class="image" style="background-image: url(bento_mini_2.jpg);">
-        </div>
+      <div id="bento-objective" class="bento-item bento-text">
+        <h1>Objetivo</h1>
+        <p>
+          Nuestro objetivo es dar a conocer nuevas tecnologías, aportar
+          conocimiento e intercambiar ideas de la mano de profesionales de la
+          informática así como del propio alumnado.
+        </p>
       </div>
 
-      <div
-        class="bento-item bento-small"
-        style="grid-column: span 1; grid-row: span 4;"
-      >
+      <div id="bento-vertical" class="bento-item">
         <div class="image" style="background-image: url(/bento_mini_3.jpg);">
         </div>
       </div>
@@ -68,6 +63,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     transition: transform 800ms;
   }
 
@@ -83,27 +79,69 @@ import PageLayout from "../layouts/PageLayout.astro";
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: dense;
     gap: 16px;
     padding: 8px;
     border-radius: 8px;
   }
 
-  @media (max-width: 640px) {
+  .bento-text {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #171717;
+    padding: 0 2rem;
+  }
+
+  #bento-vertical {
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+
+  #bento-main {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  #bento-description {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  #bento-second {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
+  #bento-objective {
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+
+  @media (max-width: 1100px) {
     h1 {
       margin: 1rem 0;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: small;
     }
 
     .grid {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: repeat(7, 1fr);
     }
 
-    .bento-small {
+    .bento-text {
+      padding: 0 20px;
+    }
+
+    #bento-description {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    #bento-second {
       display: none;
     }
   }
