@@ -1,0 +1,143 @@
+---
+import BuyTicket from "./BuyTicket.astro";
+import CesinfIcon from "./icons/CesinfIcon.astro";
+import HamburgerIcon from "./icons/HamburgerIcon.astro";
+import Link from "./Link.astro";
+
+interface Props {
+  paths: { name: string; path: string }[];
+}
+
+const { paths } = Astro.props;
+---
+
+<nav id="navbar">
+  <section class="logo">
+    <Link href="#">
+      <CesinfIcon />
+    </Link>
+    <section class="mobile_buy_ticket">
+      <!-- <BuyTicket /> -->
+    </section>
+    <button id="navbar_collapsible">
+      <HamburgerIcon />
+    </button>
+  </section>
+  <section class="paths" id="navbar_links">
+    {paths.map(({ name, path }) => <Link href={path}>{name}</Link>)}
+  </section>
+  <section class="desktop_buy_ticket">
+    <!-- <BuyTicket /> -->
+  </section>
+</nav>
+
+<style>
+  nav {
+    padding: 20px;
+    width: calc(100% - 40px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 600ms;
+  }
+
+  nav.blur {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  }
+
+  section,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: space-between;
+  }
+
+  button {
+    display: none;
+    color: #bbb;
+    outline: none;
+    background: none;
+    border: none;
+    transition-duration: 600ms;
+  }
+
+  button:hover {
+    color: white;
+  }
+
+  .mobile_buy_ticket {
+    display: none;
+  }
+
+  .paths {
+    justify-content: center;
+    gap: 80px;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 640px) {
+    nav {
+      flex-direction: column;
+    }
+
+    button {
+      display: flex;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .paths {
+      display: none;
+    }
+
+    .paths.active {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #505050;
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .desktop_buy_ticket {
+      display: none;
+    }
+
+    .mobile_buy_ticket {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  const navbar = document.getElementById("navbar");
+  const button = document.getElementById("navbar_collapsible");
+  const links = document.getElementById("navbar_links");
+
+  button?.addEventListener("click", () => {
+    const active = links?.classList.toggle("active");
+    if (active) navbar?.classList.add("blur");
+    else if (window.scrollY == 0) navbar?.classList.remove("blur");
+  });
+
+  document.addEventListener("scroll", () => {
+    links?.classList.remove("active");
+  });
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 0) navbar?.classList.add("blur");
+    else navbar?.classList.remove("blur");
+  });
+</script>

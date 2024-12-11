@@ -15,8 +15,6 @@ En este congreso, se abordan los temas más relevantes y actuales del sector tec
 
 - **Astro:** Framework web de nueva generación que combina la velocidad de sitios estáticos con la potencia de componentes interactivos.
 - **TypeScript:** Superconjunto de JavaScript que añade tipado estático para mejorar la calidad del código y la detección de errores.
-- **Tailwind CSS:** Framework de utilidad para diseñar interfaces de usuario personalizadas de forma rápida y eficiente.
-- **React:** Biblioteca de JavaScript para crear interfaces de usuario interactivas (utilizada solo si es necesario para componentes dinámicos).
 - **Cloudflare Pages:** Plataforma de despliegue de sitios web estáticos que ofrece un rendimiento excepcional y una integración sencilla con GitHub.
 
 ## Contribuciones

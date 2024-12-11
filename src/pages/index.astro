@@ -1,44 +1,25 @@
 ---
-import AnimatedCard from "../components/AnimatedCard.astro";
-import BlueButton from "../components/BlueButton.astro";
-import PinkButton from "../components/PinkButton.astro";
-import SocialMedia from "../components/SocialMedia.astro";
-import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
+import Hero from "../views/Hero.astro";
+import WhoWeAre from "../views/WhoWeAre.astro";
+
+const navigation = [
+  {
+    name: "Inicio",
+    path: "#",
+  },
+  {
+    name: "¿Quiénes somos?",
+    path: "#whoweare",
+  },
+];
 ---
 
 <Layout title="Welcome to Astro.">
-  <AnimatedCard>
-    <Title />
-    <div>
-      <h2 class="text-white">Coming soon</h2>
-      <h3 class="text-color">30 y 31 de enero, 2025</h3>
-    </div>
-    <div class="container">
-      <Button href="https://ix.cesinfull.com/" background_start="#5821da" background_end="#176e99" hover_border="#6da5ff">
-        Edición pasada 
-      </Button>
-      <Button href="https://forms.gle/jXJjxjCgbmp6ExTZ9" background_start="#cd21da" background_end="#651799" hover_border="#f78dff"> 
-        Call x papers 
-      </Button>
-    </div>
-    <SocialMedia />
-  </AnimatedCard>
+  <NavBar paths={navigation} />
+  <Hero />
+  <WhoWeAre />
+  <Footer />
 </Layout>
-
-<style>
-  .text-white {
-    font-weight: 900;
-    margin: 8px;
-  }
-  .text-color {
-    margin: 8px;
-    color: #f673ff;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-</style>
