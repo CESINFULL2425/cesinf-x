@@ -1,23 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
-import PageLayout from "../layouts/PageLayout.astro";
 import NavBar from "../components/NavBar.astro";
 import Hero from "../views/Hero.astro";
 import Sponsors from "../views/Sponsors.astro";
+import WhoWeAre from "../views/WhoWeAre.astro";
 
 const navigation = [
+  {
+    name: "Inicio",
+    path: "#",
+  },
   {
     name: "Patrocinadores",
     path: "#Patrocinadores",
   },
   {
-    name: "Page 3",
-    path: "#page_3",
-  },
-  {
-    name: "Page 4",
-    path: "#page_4",
+    name: "¿Quiénes somos?",
+    path: "#whoweare",
   },
 ];
 ---
@@ -26,11 +26,6 @@ const navigation = [
   <NavBar paths={navigation} />
   <Hero />
   <Sponsors />
-  <PageLayout id="page_3">
-    <h1>Page 3</h1>
-  </PageLayout>
-  <PageLayout id="page_4">
-    <h1>Page 4</h1>
-  </PageLayout>
+  <WhoWeAre />
   <Footer />
 </Layout>
