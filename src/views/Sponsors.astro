@@ -1,20 +1,46 @@
 ---
-import SponsorCard from "../components/SponsorCard.astro";
-import PageLayout from "../layouts/PageLayout.astro";
+import Sponsor from "../components/Sponsor.astro";
 ---
 
-<PageLayout id="Patrocinadores">
-  <div class="content">
-    <SponsorCard image="/sponsors/inetel.png" size="300px" />
+<div id="sponsors" class="container">
+  <div class="centered">
+    <Sponsor image="/sponsors/click_comunicacion.svg" category="diamond" />
   </div>
-</PageLayout>
+  <div class="centered">
+    <Sponsor image="/sponsors/inetel.webp" category="platinum" />
+    <Sponsor image="/sponsors/bandama.webp" category="platinum" />
+    <Sponsor image="/sponsors/isola.webp" category="platinum" />
+  </div>
+  <div class="centered">
+    <Sponsor image="/sponsors/holasoft.webp" category="gold" />
+    <Sponsor image="/sponsors/acidtango.webp" category="gold" />
+    <Sponsor image="/sponsors/catedrabob.webp" category="gold" />
+    <Sponsor image="/sponsors/catedrabinter.webp" category="gold" />
+    <Sponsor image="/sponsors/pythoncanarias.webp" category="gold" />
+  </div>
+</div>
 
 <style>
-  .content {
+  .container {
     display: flex;
+    flex-direction: column;
+    gap: 60px;
     width: 100%;
-    height: 100%;
+    padding-top: calc(max(40px, 1.5rem) + 40px);
+  }
+
+  .centered {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 60px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .centered {
+      gap: 20px;
+    }
   }
 </style>
