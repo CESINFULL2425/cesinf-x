@@ -1,0 +1,79 @@
+---
+interface Props {
+  image: string;
+  url: string;
+  category: "diamond" | "platinum" | "gold";
+}
+
+const { image, category, url } = Astro.props;
+const diamond = category === "diamond";
+const platinum = category === "platinum";
+const gold = category === "gold";
+---
+
+<a href={url}>
+  <img src={image} alt="sponsor" class:list={[{ diamond, platinum, gold }]} />
+</a>
+
+<style>
+  img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .diamond {
+    height: 250px;
+    width: 1200px;
+  }
+
+  .platinum {
+    height: 150px;
+    width: 300px;
+  }
+
+  .gold {
+    height: 80px;
+    width: 220px;
+  }
+
+  @media (max-width: 1216px) {
+    .diamond {
+      height: 180px;
+      width: 700px;
+    }
+
+    .platinum {
+      height: 100px;
+      width: 210px;
+    }
+
+    .gold {
+      height: 80px;
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .diamond {
+      height: 160px;
+      width: 600px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .diamond {
+      height: 100px;
+      width: 350px;
+    }
+
+    .platinum {
+      height: 60px;
+      width: 100px;
+    }
+
+    .gold {
+      height: 40px;
+      width: 75px;
+    }
+  }
+</style>

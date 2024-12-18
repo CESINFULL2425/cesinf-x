@@ -1,0 +1,93 @@
+---
+import Sponsor from "../components/Sponsor.astro";
+---
+
+<div id="sponsors" class="container">
+  <div class="centered">
+    <Sponsor
+      url="https://clickcomunicacion.es/"
+      image="/sponsors/click_comunicacion.svg"
+      category="diamond"
+    />
+  </div>
+  <div class="centered">
+    <Sponsor
+      url="https://www.grupoinetel.com/"
+      image="/sponsors/inetel.webp"
+      category="platinum"
+    />
+    <Sponsor
+      url="https://www.galletasbandama.com/"
+      image="/sponsors/bandama.webp"
+      category="platinum"
+    />
+    <Sponsor
+      url="https://www.ull.es/centros/escuela-superior-de-ingenieria-y-tecnologia/"
+      image="/sponsors/esit.webp"
+      category="platinum"
+    />
+    <Sponsor
+      url="http://www.isola-alimentacion.es/"
+      image="/sponsors/isola.webp"
+      category="platinum"
+    />
+  </div>
+  <div class="centered">
+    <Sponsor
+      url="https://www.holasoft.es/"
+      image="/sponsors/holasoft.webp"
+      category="gold"
+    />
+    <Sponsor
+      url="https://www.acidtango.com/"
+      image="/sponsors/acidtango.webp"
+      category="gold"
+    />
+    <Sponsor
+      url="https://www.ull.es/catedras/catedrabob/"
+      image="/sponsors/catedrabob.webp"
+      category="gold"
+    />
+    <Sponsor
+      url="https://www.ull.es/catedras/catedra-ciberseguridad-binter/"
+      image="/sponsors/catedrabinter.webp"
+      category="gold"
+    />
+    <Sponsor
+      url="https://pythoncanarias.es/"
+      image="/sponsors/pythoncanarias.webp"
+      category="gold"
+    />
+    <Sponsor
+      url="https://es.python.org/"
+      image="/sponsors/pythonespaña.webp"
+      category="gold"
+    />
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    padding-top: calc(max(40px, 1.5rem) + 40px);
+    padding-bottom: calc(max(40px, 1.5rem) + 40px);
+  }
+
+  .centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .centered {
+      gap: 20px;
+    }
+  }
+</style>
