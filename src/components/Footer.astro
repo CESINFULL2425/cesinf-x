@@ -3,6 +3,8 @@ import Link from "./Link.astro";
 import GrayLinkWithIcon from "./GrayLinkWithIcon.astro";
 import BuildingIcon from "./icons/BuildingIcon.astro";
 import MapIcon from "./icons/MapIcon.astro";
+import MailIcon from "./icons/MailIcon.astro";
+import TermsIcon from "./icons/TermsIcon.astro";
 ---
 
 <footer>
@@ -75,7 +77,12 @@ import MapIcon from "./icons/MapIcon.astro";
       Avenida Astrofísico Francisco Sánchez, s/n
     </GrayLinkWithIcon>
     <GrayLinkWithIcon href="mailto:cesinf@ull.edu.es">
+      <MailIcon width="20" height="20" />
       cesinf@ull.edu.es
+    </GrayLinkWithIcon>
+    <GrayLinkWithIcon href="/serivce-terms.pdf">
+      <TermsIcon width="20" height="20" />
+      Términos y condiciones de servicio
     </GrayLinkWithIcon>
   </div>
 </footer>
