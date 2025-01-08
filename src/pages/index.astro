@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar.astro";
 import Hero from "../views/Hero.astro";
 import Sponsors from "../views/Sponsors.astro";
 import WhoWeAre from "../views/WhoWeAre.astro";
+import BuyTicket from "../views/BuyTicket.astro";
 
 const navigation = [
   {
@@ -20,8 +21,8 @@ const navigation = [
     path: "#whoweare",
   },
   {
-    name: "Términos y condiciones",
-    path: "/serivce-terms.pdf",
+    name: "Compra tu entrada!",
+    path: "#buy-ticket",
   },
 ];
 ---
@@ -31,5 +32,6 @@ const navigation = [
   <Hero />
   <Sponsors />
   <WhoWeAre />
+  <BuyTicket />
   <Footer />
 </Layout>
