@@ -2,7 +2,7 @@
 import Sponsor from "../components/Sponsor.astro";
 ---
 
-<div id="sponsors" class="container">
+<div id="sponsors" class="ctm-container">
   <div class="centered">
     <Sponsor
       url="https://clickcomunicacion.es/"
@@ -67,11 +67,12 @@ import Sponsor from "../components/Sponsor.astro";
 </div>
 
 <style>
-  .container {
+  .ctm-container {
     display: flex;
     flex-direction: column;
     gap: 60px;
     width: 100%;
+    padding: 0 20px;
     padding-top: calc(max(40px, 1.5rem) + 40px);
     padding-bottom: calc(max(40px, 1.5rem) + 40px);
   }

@@ -45,7 +45,7 @@ const { paths } = Astro.props;
     transition: all 600ms;
   }
 
-  nav.blur {
+  nav.blur-filter {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
@@ -127,8 +127,8 @@ const { paths } = Astro.props;
 
   button?.addEventListener("click", () => {
     const active = links?.classList.toggle("active");
-    if (active) navbar?.classList.add("blur");
-    else if (window.scrollY == 0) navbar?.classList.remove("blur");
+    if (active) navbar?.classList.add("blur-filter");
+    else if (window.scrollY == 0) navbar?.classList.remove("blur-filter");
   });
 
   document.addEventListener("scroll", () => {
@@ -136,7 +136,7 @@ const { paths } = Astro.props;
   });
 
   document.addEventListener("scroll", () => {
-    if (window.scrollY > 0) navbar?.classList.add("blur");
-    else navbar?.classList.remove("blur");
+    if (window.scrollY > 0) navbar?.classList.add("blur-filter");
+    else navbar?.classList.remove("blur-filter");
   });
 </script>
