@@ -15,9 +15,6 @@ const { paths } = Astro.props;
     <Link href="#">
       <CesinfIcon />
     </Link>
-    <section class="mobile_buy_ticket">
-      <!-- <BuyTicket /> -->
-    </section>
     <button id="navbar_collapsible">
       <HamburgerIcon />
     </button>
@@ -25,13 +22,11 @@ const { paths } = Astro.props;
   <section class="paths" id="navbar_links">
     {paths.map(({ name, path }) => <Link href={path}>{name}</Link>)}
   </section>
-  <section class="desktop_buy_ticket">
-    <!-- <BuyTicket /> -->
-  </section>
 </nav>
 
 <style>
   nav {
+    z-index: 10;
     padding: 20px;
     width: 100%;
     position: fixed;
@@ -75,10 +70,6 @@ const { paths } = Astro.props;
     color: white;
   }
 
-  .mobile_buy_ticket {
-    display: none;
-  }
-
   .paths {
     justify-content: center;
     gap: 80px;
@@ -108,14 +99,6 @@ const { paths } = Astro.props;
       border-top: 1px solid #505050;
       width: 100%;
       padding-top: 20px;
-    }
-
-    .desktop_buy_ticket {
-      display: none;
-    }
-
-    .mobile_buy_ticket {
-      display: block;
     }
   }
 </style>
