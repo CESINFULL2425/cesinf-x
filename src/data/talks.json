@@ -1,0 +1,118 @@
+{
+  "day30": [
+    {
+      "smallTitle": "Biohacking con Python",
+      "title": "Biohacking con Python: cómo convertirse en el señor Burns fluorescente",
+      "description": "Uso de python para explorar y modificar aspectos biológicos del cuerpo humano, uniendo tecnología y biología en el contexto del biohacking.",
+      "speakers": ["Marina Moro López"]
+    },
+    {
+      "smallTitle": "Clean Code",
+      "title": "SOLID, YAGNI... o cómo hacer clean code",
+      "description": "En esta charla, exploraremos los principios fundamentales de Clean Code que te ayudarán a escribir código limpio, eficiente y fácil de mantener desde el principio de tu carrera. A través de acrónimos populares en la industria como KISS, YAGNI o SOLID, descubriremos cómo estos conceptos se traducen en prácticas concretas.",
+      "speakers": ["Héctor Martín Armas", "Alberto González Álvarez"]
+    },
+    {
+      "smallTitle": "TIC y Sanidad",
+      "title": "TIC y Sanidad: Uso de tecnologías de la información en el sector sanitario",
+      "description": "No disponible.",
+      "speakers": ["Carlos Bermúdez Pérez"]
+    },
+    {
+      "smallTitle": "Traductor lenguaje de signos con IA",
+      "title": "Cómo se construye un Traductor de Lenguaje de Signos con IA",
+      "description": "Explicaremos todo el proceso de como realizamos un traductor de Lenguaje de Signos con Inteligencia Artificial usando Python. Durante la charla, iremos detallando como fuimos siguiendo todos los pasos, desde la toma de imágenes de signos, pasando por su etiquetado automático para entrenar el modelo y que este fuera capaz de reconocer signos. Todo ello, ayudado por debajo de GPT3.5 para darle coherencia a las frases formadas. Algunas de las cosas que explicaremos, ya que a nosotros también nos abrumaron en su momento son: ¿Es muy difícil entrenar un modelo en local?, ¿Cómo evitar que GPT recurra a la invención si no se le pasan los datos correctos?, etc. Todo esto suena muy loco, pero unos estudiantes de cuarto de carrera como nosotros lo pueden hacer!!",
+      "speakers": [
+        "Jesús Escribano Serena",
+        "Alba Palomino Jiménez",
+        "Rafael Emilio Pérez López"
+      ]
+    },
+    {
+      "smallTitle": "Informática en Medicina",
+      "title": "Aplicaciones de la Informática en Medicina realizadas en nuestra ESIT",
+      "description": "En esta charla comentaremos algunas aplicaciones concretas de la Informática en el campo de la Medicina realizadas en nuestra escuela. Nos centraríamos en las aplicaciones en las que los estudiantes de Informática han colaborado con nosotros directamente - hay muchos desarrollos donde compañeros suyos han desarrollado su TFG, TFM, etc. Nos gustaría que vieran cómo pueden ustedes seguir colaborando en este tema tan útil y apasionante.",
+      "speakers": ["Silvia Alayón Miranda", "Rafael Arnay del Arco"]
+    },
+    {
+      "smallTitle": "Datos abiertos con IA generativa",
+      "title": "Mi primer proyecto de datos abiertos usando IA generativa",
+      "description": "En esta charla se abordará cómo transformar datos abiertos en aplicaciones útiles mediante el uso de inteligencia artificial generativa. A través de un caso práctico basado en datos del Gobierno de Canarias, se explicará cómo estas herramientas pueden facilitar tareas como la limpieza de datos, la creación de visualizaciones y el desarrollo rápido de prototipos web.",
+      "speakers": ["José Alberto Pérez Melián"]
+    },
+    {
+      "smallTitle": "Sobrevivir al Mundo Tech",
+      "title": "Sobrevivir al Mundo Tech: Lo que no nos contaron.",
+      "description": "Esta charla va a tratar sobre cómo prepararnos para dar el salto al mundo laboral en programación, compartiendo consejos y experiencias de quienes ya hemos pasado por ahí. Vamos a hablar mucho sobre la importancia de hacer networking y cómo las comunidades tecnológicas pueden ser una gran ayuda en nuestro crecimiento profesional. También vamos a tocar el tema de tener expectativas realistas y ser exigentes con las oportunidades laborales, buscando siempre un balance entre aprender y cuidar nuestra calidad de vida. Destacaremos la importancia de las buenas prácticas en programación, que son clave para escribir código que sea sostenible y de calidad. Hablaremos sobre el testing, la estructura del código y cómo las \"katas\" pueden ayudarnos a mejorar nuestra técnica. También mencionaremos recursos para seguir aprendiendo y cómo avanzar paso a paso en nuestra carrera, ofreciéndonos una guía para esos primeros pasos importantes.",
+      "speakers": ["Daniel Nuez Wehbe", "Ariane Zanardi Francisco"]
+    },
+    {
+      "smallTitle": "Trabajo remoto",
+      "title": "El Cuento del Trabajo Remoto.",
+      "description": "En esta charla, exploraremos las oportunidades y desafíos del trabajo remoto mediante una reflexión sobre esta modalidad. Compartiré experiencias y lecciones para aprovechar la flexibilidad sin caer en las trampas más comunes, con consejos prácticos sobre productividad, gestión del tiempo y conexión con el equipo. Una historia para quienes ven el trabajo remoto como un sueño… o una trampa.",
+      "speakers": ["Juan Antonio Gómez Cabo"]
+    },
+    {
+      "smallTitle": "Jueguitos canarios",
+      "title": "Hacer Jueguitos en Canarias... y otras tantas cosas",
+      "description": "Hablamos de qué va eso de crear videojuegos, las salidas profesionales que tenemos en Canarias, y cómo muchas de las ideas que se nos transmiten desde la sociedad y las instituciones están bastante desatinadas. Y por supuesto, con un poquito de cachondeo.",
+      "speakers": ["David Carmona Ballester"]
+    }
+  ],
+  "day31": [
+    {
+      "smallTitle": "Punteros inteligentes",
+      "title": "Los punteros inteligentes, ¿Son inteligentes?",
+      "description": "¿Los punteros en C++ te han hecho perder más horas de las que quieres admitir? Si alguna vez has gritado “¡¿por qué segmentation fault?!” al compilador, esta charla es para ti. Con los punteros inteligentes (smart pointers), trabajar con memoria dinámica deja de ser una fuente de sufrimiento y se convierte en algo simple y seguro. En esta charla aprenderás a eliminar estos problemas de raíz y llevarás tu código a otro nivel.",
+      "speakers": ["Roberto Giménez Fuentes"]
+    },
+    {
+      "smallTitle": "FiveM GTA V. Crea tu propio server",
+      "title": "Crea tu Propio Universo con GTA V: Creación de servidores personalizados con FiveM.",
+      "description": "¿Alguna vez has imaginado tener control total sobre el mundo de GTA V? En esta charla dinámica y práctica, te enseñaremos cómo hacer realidad esa visión creando tu propio servidor de FiveM. Desde la instalación inicial hasta la configuración avanzada, exploraremos cada paso para que puedas diseñar una experiencia de juego única y personalizada. Aprenderás a: Instalar y configurar un servidor FiveM desde cero, personalizar tu servidor con mods, scripts y recursos exclusivos, gestionar y mantener tu comunidad de jugadores de manera efectiva, solucionar problemas comunes y optimizar el rendimiento de tu servidor. No importa si eres un novato o tienes experiencia previa, este taller te proporcionará las herramientas y conocimientos necesarios para convertirte en el maestro de tu propio universo en GTA V. ¡Prepárate para llevar tu pasión por el juego al siguiente nivel y compartir experiencias inolvidables con tus amigos y jugadores de todo el mundo!",
+      "speakers": ["Daniel Alejandro Álvarez Casablanca"]
+    },
+    {
+      "smallTitle": "Introducción a las metaheurísticas",
+      "title": "Introducción a las metaheurísticas: estrategias inteligentes para resolver problemas complejos",
+      "description": "El objetivo de esta charla es ofrecer a los participantes una comprensión básica de las metaheurísticas, entendiendo cómo estas técnicas pueden resolver problemas de optimización combinatoria de manera eficiente. En definitiva, se busca que los asistentes comprendan los principios detrás de las metaheurísticas y puedan identificar escenarios donde estos métodos resultan útiles, especialmente cuando los métodos exactos se vuelven inviables.",
+      "speakers": ["Gara Miranda Valladares"]
+    },
+    {
+      "smallTitle": "Criptografía post-cuántica",
+      "title": "Introducción a la criptografía post-cuántica",
+      "description": "El avance y la amenaza que representa la computación cuántica plantean desafíos significativos para la seguridad de la información. Esta situación ha generado la necesidad imperiosa de desarrollar sistemas criptográficos capaces de resistir ataques cuánticos. En este contexto, la criptografía post-cuántica ha surgido como un campo de investigación crucial. Sin embargo, uno de los principales desafíos que enfrenta este campo es la escasez de recursos disponibles debido al nacimiento emergente de la misma. En 2022 se publicaron los nuevos estándares tanto de cifrado como de firma digital actuales: CRYSTALS - Kyber y CRYSTALS - Dilithium. Estos algoritmos se basan en un interesante objeto algebraico que combina reducciones modulares, matrices y polinomios: los retículos.",
+      "speakers": ["Édgar Pérez Ramos"]
+    },
+    {
+      "smallTitle": "Atención hospitalarIA",
+      "title": "Atención hospitalarIA del futuro",
+      "description": "Conoce las nuevas técnicas de Deep Learning y NLP que han ganado el premio Nobel de Química 2024, para mejorar la asistencia sanitaria en los hospitales e investigación científica. En esta charla introductoria, veremos herramientas que se usan en el mundo de la IA aplicada a la salud, como reconocimiento de imágenes de rayos X o de manchas en la piel con potencial cancerígeno que usan técnicas de Computer Vision o la automatización de informes médicos con técnicas de procesamiento de lenguaje natural. También veremos ejemplos reales de Google DeepMind sobre cómo están a la vanguardia de este sector. Aportan modelos como AlphaFold, galardonado con el Premio Nobel de Química 2024, para la predicción de la estructura 3D de las proteínas o Med-PaLM 2, la IA conversacional de Google especialmente entrenada en el ámbito médico. Y lo mejor es que tú puedes probarlo y en esta charla verás que con Python todo es más fácil!",
+      "speakers": ["Luis Merino Ulizarna"]
+    },
+    {
+      "smallTitle": "Hacking Web",
+      "title": "Hacking Web: De la teoría a la acción",
+      "description": "En esta charla se ofrecerá una explicación sencilla sobre las principales vulnerabilidades web que afectan a la seguridad de las aplicaciones. Entre los temas que se abordarán, se destacan las inyecciones SQL (SQLI), la inclusión de archivos locales (LFI) y el control de acceso roto (Broken Access Control). A lo largo de la presentación, no solo se discutirá en qué consisten estas vulnerabilidades y cómo pueden comprometer los sistemas, sino que también se realizarán demostraciones prácticas de los ataques. El objetivo es que los asistentes comprendan cómo los atacantes explotan estas debilidades de una forma práctica y amena.",
+      "speakers": ["Omar Suárez Doro"]
+    },
+    {
+      "smallTitle": "Desarrollo con GODot",
+      "title": "GODot: Una posibilidad para desarrolladoras casuales (y no tan casuales)",
+      "description": "La industria del videojuego siempre ha estado muy polarizada a la hora de elegir un motor gráfico en el que desarrollar un juego. Si es en 2D Unity, si es en 3D Unreal Engine. Con las recientes polémicas con Unity y la popularidad del open source, Godot ganó mucha fama. En esta charla verás las características que tiene Godot y lo compararemos con su mayor rival: Unity.",
+      "speakers": ["Diego Díaz Morón"]
+    },
+    {
+      "smallTitle": "Computación Neurosimbólica",
+      "title": "Computación Neurosimbólica",
+      "description": "La computación neurosimbólica es una tecnología para crear sistemas de inteligencia artificial, que constituye una alternativa a las redes neuronales clásicas porque incorporan en su arquitectura elementos de los sistemas clásicos, por ejemplo la utilización de sistemas de reglas. En esta charla nos centraremos en los fundamentos y propuestas actuales relacionadas con este tipo de técnicas.",
+      "speakers": ["José Ignacio Estévez Damas"]
+    },
+    {
+      "smallTitle": "Fundamentos de Git",
+      "title": "Fundamentos de Git",
+      "description": "Nos introduciremos en el mundo de los sistemas de control de versiones, comprendiendo la importancia y los beneficios que aportan al desarrollo de software. Se enfocarán en los conceptos básicos y en el manejo de Git en un entorno local, sentando las bases para un uso efectivo de esta herramienta.",
+      "speakers": ["Miguel Ignacio Cabrera San Gil"]
+    }
+  ]
+}

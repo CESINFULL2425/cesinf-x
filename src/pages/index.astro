@@ -6,6 +6,7 @@ import Hero from "../views/Hero.astro";
 import Sponsors from "../views/Sponsors.astro";
 import WhoWeAre from "../views/WhoWeAre.astro";
 import BuyTicket from "../views/BuyTicket.astro";
+import EventCalendar from "@/views/EventCalendar.astro";
 
 const navigation = [
   {
@@ -21,6 +22,10 @@ const navigation = [
     path: "#whoweare",
   },
   {
+    name: "Calendario del evento",
+    path: "#calendar",
+  },
+  {
     name: "Compra tu entrada!",
     path: "#buy-ticket",
   },
@@ -32,6 +37,7 @@ const navigation = [
   <Hero />
   <Sponsors />
   <WhoWeAre />
+  <EventCalendar />
   <BuyTicket />
   <Footer />
 </Layout>
