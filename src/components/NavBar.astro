@@ -15,9 +15,6 @@ const { paths } = Astro.props;
     <Link href="#">
       <CesinfIcon />
     </Link>
-    <section class="mobile_buy_ticket">
-      <!-- <BuyTicket /> -->
-    </section>
     <button id="navbar_collapsible">
       <HamburgerIcon />
     </button>
@@ -25,15 +22,13 @@ const { paths } = Astro.props;
   <section class="paths" id="navbar_links">
     {paths.map(({ name, path }) => <Link href={path}>{name}</Link>)}
   </section>
-  <section class="desktop_buy_ticket">
-    <!-- <BuyTicket /> -->
-  </section>
 </nav>
 
 <style>
   nav {
+    z-index: 10;
     padding: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +40,7 @@ const { paths } = Astro.props;
     transition: all 600ms;
   }
 
-  nav.blur {
+  nav.blur-filter {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
@@ -75,17 +70,13 @@ const { paths } = Astro.props;
     color: white;
   }
 
-  .mobile_buy_ticket {
-    display: none;
-  }
-
   .paths {
     justify-content: center;
     gap: 80px;
     flex-grow: 1;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 1046px) {
     nav {
       flex-direction: column;
     }
@@ -109,14 +100,6 @@ const { paths } = Astro.props;
       width: 100%;
       padding-top: 20px;
     }
-
-    .desktop_buy_ticket {
-      display: none;
-    }
-
-    .mobile_buy_ticket {
-      display: block;
-    }
   }
 </style>
 
@@ -127,8 +110,8 @@ const { paths } = Astro.props;
 
   button?.addEventListener("click", () => {
     const active = links?.classList.toggle("active");
-    if (active) navbar?.classList.add("blur");
-    else if (window.scrollY == 0) navbar?.classList.remove("blur");
+    if (active) navbar?.classList.add("blur-filter");
+    else if (window.scrollY == 0) navbar?.classList.remove("blur-filter");
   });
 
   document.addEventListener("scroll", () => {
@@ -136,7 +119,7 @@ const { paths } = Astro.props;
   });
 
   document.addEventListener("scroll", () => {
-    if (window.scrollY > 0) navbar?.classList.add("blur");
-    else navbar?.classList.remove("blur");
+    if (window.scrollY > 0) navbar?.classList.add("blur-filter");
+    else navbar?.classList.remove("blur-filter");
   });
 </script>
