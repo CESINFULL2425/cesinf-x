@@ -94,7 +94,7 @@
       "smallTitle": "Hacking Web",
       "title": "Hacking Web: De la teoría a la acción",
       "description": "En esta charla se ofrecerá una explicación sencilla sobre las principales vulnerabilidades web que afectan a la seguridad de las aplicaciones. Entre los temas que se abordarán, se destacan las inyecciones SQL (SQLI), la inclusión de archivos locales (LFI) y el control de acceso roto (Broken Access Control). A lo largo de la presentación, no solo se discutirá en qué consisten estas vulnerabilidades y cómo pueden comprometer los sistemas, sino que también se realizarán demostraciones prácticas de los ataques. El objetivo es que los asistentes comprendan cómo los atacantes explotan estas debilidades de una forma práctica y amena.",
-      "speakers": ["Omar Suárez Doro"]
+      "speakers": ["Omar Suárez Doro", "Jonay Faas García"]
     },
     {
       "smallTitle": "Desarrollo con GODot",
