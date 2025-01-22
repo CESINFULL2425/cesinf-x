@@ -1,6 +1,16 @@
 {
   "day30": [
     {
+      "smallTitle": "Acto de apertura",
+      "title": "Acto de apertura",
+      "description": "Inauguración del evento.",
+      "speakers": [
+        "José Ramón Morera Campos",
+        "Leopoldo Sánchez Acosta",
+        "Esteban Abeledo"
+      ]
+    },
+    {
       "smallTitle": "Biohacking con Python",
       "title": "Biohacking con Python: cómo convertirse en el señor Burns fluorescente",
       "description": "Uso de python para explorar y modificar aspectos biológicos del cuerpo humano, uniendo tecnología y biología en el contexto del biohacking.",
@@ -60,6 +70,12 @@
     }
   ],
   "day31": [
+    {
+      "smallTitle": "",
+      "title": "",
+      "description": "",
+      "speakers": []
+    },
     {
       "smallTitle": "Punteros inteligentes",
       "title": "Los punteros inteligentes, ¿Son inteligentes?",
