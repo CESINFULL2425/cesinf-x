@@ -2,7 +2,7 @@
 import Sponsor from "../components/Sponsor.astro";
 ---
 
-<div id="sponsors" class="ctm-container">
+<article id="sponsors" class="ctm-container">
   <div class="centered">
     <Sponsor
       url="https://clickcomunicacion.es/"
@@ -84,7 +84,7 @@ import Sponsor from "../components/Sponsor.astro";
       category="gold"
     />
   </div>
-</div>
+</article>
 
 <style>
   .ctm-container {
@@ -93,8 +93,7 @@ import Sponsor from "../components/Sponsor.astro";
     gap: 60px;
     width: 100%;
     padding: 0 20px;
-    padding-top: calc(max(40px, 1.5rem) + 40px);
-    padding-bottom: calc(max(40px, 1.5rem) + 40px);
+    padding-top: 100px;
   }
 
   .centered {
