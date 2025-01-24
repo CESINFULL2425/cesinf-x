@@ -2,15 +2,18 @@
 import Calendar from "@/components/Calendar.tsx";
 ---
 
-<div
-  id="calendar"
-  class="flex w-full items-center justify-center mb-20 top-margin"
->
+<article id="calendar">
   <Calendar client:only />
-</div>
+</article>
 
 <style>
-  .top-margin {
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 100%;
+    padding: 0 20px;
     padding-top: 100px;
   }
 </style>

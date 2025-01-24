@@ -1,51 +1,53 @@
----
-import PageLayout from "../layouts/PageLayout.astro";
----
+<article id="whoweare">
+  <div class="grid">
+    <div id="bento-description" class="bento-item bento-text">
+      <h1>¿Quiénes somos?</h1>
+      <p>
+        El Congreso de Estudiantes de Ingeniería Informática es un evento que se
+        celebra anualmente en la Facultad de Física y Matemáticas de la
+        Universidad de La Laguna, organizado por estudiantes del grado de
+        Ingeniería Informática.
+      </p>
+    </div>
 
-<PageLayout id="whoweare">
-  <article
-    style="display: flex; height: 100%; width: 100%; align-items: start; justify-content: center;"
-  >
-    <div class="grid">
-      <div id="bento-description" class="bento-item bento-text">
-        <h1>¿Quiénes somos?</h1>
-        <p>
-          El Congreso de Estudiantes de Ingeniería Informática es un evento que
-          se celebra anualmente en la Facultad de Física y Matemáticas de la
-          Universidad de La Laguna, organizado por estudiantes del grado de
-          Ingeniería Informática.
-        </p>
-      </div>
-
-      <div id="bento-main" class="bento-item">
-        <div class="image" style="background-image: url(/bento_0.webp);"></div>
-      </div>
-
-      <div id="bento-second" class="bento-item">
-        <div class="image" style="background-image: url(/bento_1.webp);"></div>
-      </div>
-
-      <div id="bento-objective" class="bento-item bento-text">
-        <h1>Objetivo</h1>
-        <p>
-          Nuestro objetivo es dar a conocer nuevas tecnologías, aportar
-          conocimiento e intercambiar ideas de la mano de profesionales de la
-          informática así como del propio alumnado.
-        </p>
-      </div>
-
-      <div id="bento-vertical" class="bento-item">
-        <div class="image" style="background-image: url(/bento_mini_3.webp);">
-        </div>
+    <div id="bento-main" class="bento-item">
+      <div class="image" style="background-image: url(/img/bento_0.webp);">
       </div>
     </div>
-  </article>
-</PageLayout>
+
+    <div id="bento-second" class="bento-item">
+      <div class="image" style="background-image: url(/img/bento_1.webp);">
+      </div>
+    </div>
+
+    <div id="bento-objective" class="bento-item bento-text">
+      <h1>Objetivo</h1>
+      <p>
+        Nuestro objetivo es dar a conocer nuevas tecnologías, aportar
+        conocimiento e intercambiar ideas de la mano de profesionales de la
+        informática así como del propio alumnado.
+      </p>
+    </div>
+
+    <div id="bento-vertical" class="bento-item">
+      <div class="image" style="background-image: url(/img/bento_mini_3.webp);">
+      </div>
+    </div>
+  </div>
+</article>
 
 <style>
+  article {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    padding: 0 20px;
+    padding-top: 100px;
+  }
+
   h1 {
     padding: 20px 0;
-    font-size: 3rem;
   }
 
   p {
@@ -75,7 +77,6 @@ import PageLayout from "../layouts/PageLayout.astro";
     margin-top: 20px;
     max-width: 1300px;
     display: grid;
-    height: 80%;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -89,7 +90,7 @@ import PageLayout from "../layouts/PageLayout.astro";
     grid-column: span 2;
     grid-row: span 2;
     background-color: #171717;
-    padding: 0 2rem;
+    padding: 0 30px 30px 30px;
   }
 
   #bento-vertical {
@@ -118,22 +119,9 @@ import PageLayout from "../layouts/PageLayout.astro";
   }
 
   @media (max-width: 1100px) {
-    h1 {
-      padding: 15px 0;
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: small;
-    }
-
     .grid {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(7, 1fr);
-    }
-
-    .bento-text {
-      padding: 0 20px;
     }
 
     #bento-description {
@@ -144,12 +132,16 @@ import PageLayout from "../layouts/PageLayout.astro";
     #bento-second {
       display: none;
     }
+
+    .bento-text {
+      padding: 0 20px 20px 20px;
+    }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 380px) {
     h1 {
       padding: 10px 0;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
     p {
