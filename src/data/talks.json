@@ -17,15 +17,15 @@
       "speakers": ["Marina Moro López"]
     },
     {
-      "smallTitle": "Clean Code",
-      "title": "SOLID, YAGNI... o cómo hacer clean code",
-      "description": "En esta charla, exploraremos los principios fundamentales de Clean Code que te ayudarán a escribir código limpio, eficiente y fácil de mantener desde el principio de tu carrera. A través de acrónimos populares en la industria como KISS, YAGNI o SOLID, descubriremos cómo estos conceptos se traducen en prácticas concretas.",
-      "speakers": ["Héctor Martín Armas", "Alberto González Álvarez"]
+      "smallTitle": "FiveM GTA V. Crea tu propio server",
+      "title": "Crea tu Propio Universo con GTA V: Creación de servidores personalizados con FiveM.",
+      "description": "¿Alguna vez has imaginado tener control total sobre el mundo de GTA V? En esta charla dinámica y práctica, te enseñaremos cómo hacer realidad esa visión creando tu propio servidor de FiveM. Desde la instalación inicial hasta la configuración avanzada, exploraremos cada paso para que puedas diseñar una experiencia de juego única y personalizada. Aprenderás a: Instalar y configurar un servidor FiveM desde cero, personalizar tu servidor con mods, scripts y recursos exclusivos, gestionar y mantener tu comunidad de jugadores de manera efectiva, solucionar problemas comunes y optimizar el rendimiento de tu servidor. No importa si eres un novato o tienes experiencia previa, este taller te proporcionará las herramientas y conocimientos necesarios para convertirte en el maestro de tu propio universo en GTA V. ¡Prepárate para llevar tu pasión por el juego al siguiente nivel y compartir experiencias inolvidables con tus amigos y jugadores de todo el mundo!",
+      "speakers": ["Daniel Alejandro Álvarez Casablanca"]
     },
     {
       "smallTitle": "TIC y Sanidad",
       "title": "TIC y Sanidad: Uso de tecnologías de la información en el sector sanitario",
-      "description": "No disponible.",
+      "description": "Hablaremos del mundo Sanitario y las Tecnologías de la Información. Los aspectos más relevantes. Las oportunidades, retos y desafío a las que se enfrenta la informática en el mundo sanitario.",
       "speakers": ["Carlos Bermúdez Pérez"]
     },
     {
@@ -83,10 +83,10 @@
       "speakers": ["Roberto Giménez Fuentes"]
     },
     {
-      "smallTitle": "FiveM GTA V. Crea tu propio server",
-      "title": "Crea tu Propio Universo con GTA V: Creación de servidores personalizados con FiveM.",
-      "description": "¿Alguna vez has imaginado tener control total sobre el mundo de GTA V? En esta charla dinámica y práctica, te enseñaremos cómo hacer realidad esa visión creando tu propio servidor de FiveM. Desde la instalación inicial hasta la configuración avanzada, exploraremos cada paso para que puedas diseñar una experiencia de juego única y personalizada. Aprenderás a: Instalar y configurar un servidor FiveM desde cero, personalizar tu servidor con mods, scripts y recursos exclusivos, gestionar y mantener tu comunidad de jugadores de manera efectiva, solucionar problemas comunes y optimizar el rendimiento de tu servidor. No importa si eres un novato o tienes experiencia previa, este taller te proporcionará las herramientas y conocimientos necesarios para convertirte en el maestro de tu propio universo en GTA V. ¡Prepárate para llevar tu pasión por el juego al siguiente nivel y compartir experiencias inolvidables con tus amigos y jugadores de todo el mundo!",
-      "speakers": ["Daniel Alejandro Álvarez Casablanca"]
+      "smallTitle": "Clean Code",
+      "title": "SOLID, YAGNI... o cómo hacer clean code",
+      "description": "En esta charla, exploraremos los principios fundamentales de Clean Code que te ayudarán a escribir código limpio, eficiente y fácil de mantener desde el principio de tu carrera. A través de acrónimos populares en la industria como KISS, YAGNI o SOLID, descubriremos cómo estos conceptos se traducen en prácticas concretas.",
+      "speakers": ["Héctor Martín Armas", "Alberto González Álvarez"]
     },
     {
       "smallTitle": "Introducción a las metaheurísticas",
