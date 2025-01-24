@@ -24,7 +24,7 @@ const Calendar: FC = () => {
   }, []);
 
   return (
-    <div className="dark rounded-md border bg-popover w-[320px] sm:w-fit xl:w-[1250px]">
+    <div className="dark rounded-md border bg-popover w-full max-w-[1300px]">
       <Table>
         <TableHeader>
           <TableRow>
