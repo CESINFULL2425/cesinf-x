@@ -68,11 +68,13 @@ small {
   flex-shrink: 0;
 }
 
+/* https://fonts.google.com/specimen/Rubik+Glitch?preview.text=10%C2%BA%20aniversario&categoryFilters=Feeling:%2FExpressive%2FPlayful */
 @font-face {
   font-family: "Glitch";
   src: url(/fonts/RubikGlitch-Regular.woff2);
 }
 
+/* https://fontsource.org/fonts/inter/cdn */
 @font-face {
   font-family: "Inter";
   src: url(/fonts/inter-latin-500-normal.woff2);
