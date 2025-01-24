@@ -8,8 +8,33 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import TalkCard from "./TalkCard";
-import talks from "@/data/talks.json";
-import hours from "@/data/hours.json";
+import data from "@/data/talks.json";
+
+type DataType = [
+  { completeHour: string; hour: string },
+  (
+    | {
+        type: undefined;
+        smallTitle: string;
+        title: string;
+        description: string;
+        speakers: string[];
+      }
+    | { type: "break" }
+  ),
+  (
+    | {
+        type: undefined;
+        smallTitle: string;
+        title: string;
+        description: string;
+        speakers: string[];
+      }
+    | { type: "break" }
+  ),
+][];
+
+const typedData = data as DataType;
 
 const Calendar: FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -34,28 +59,24 @@ const Calendar: FC = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {hours.map(({ id, completeHour, hour }) => (
-            <TableRow key={hour}>
+          {typedData.map(([{ hour, completeHour }, talk1, talk2]) => (
+            <TableRow key={completeHour}>
               <TableCell className="font-medium">
                 {isMobile ? hour : completeHour}
               </TableCell>
               <TableCell className="text-center md:text-left">
-                {(() => {
-                  if (id === -1)
-                    return <p className="text-neutral-500">Descanso</p>;
-                  if (id === -2)
-                    return <p className="text-neutral-500">Mesa redonda</p>;
-                  return <TalkCard {...talks.day30[id]} />;
-                })()}
+                {talk1?.type === "break" ? (
+                  <p className="text-neutral-500">Descanso</p>
+                ) : (
+                  <TalkCard {...talk1} />
+                )}
               </TableCell>
               <TableCell className="text-center md:text-left">
-                {(() => {
-                  if (id === -1)
-                    return <p className="text-neutral-500">Descanso</p>;
-                  if (id === -2)
-                    return <p className="text-neutral-500">Mesa redonda</p>;
-                  return <TalkCard {...talks.day31[id]} />;
-                })()}
+                {talk2?.type === "break" ? (
+                  <p className="text-neutral-500">Descanso</p>
+                ) : (
+                  <TalkCard {...talk2} />
+                )}
               </TableCell>
             </TableRow>
           ))}

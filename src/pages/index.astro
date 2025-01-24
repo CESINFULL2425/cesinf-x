@@ -6,7 +6,7 @@ import Hero from "../views/Hero.astro";
 import Sponsors from "../views/Sponsors.astro";
 import WhoWeAre from "../views/WhoWeAre.astro";
 import BuyTicket from "../views/BuyTicket.astro";
-import EventCalendar from "@/views/EventCalendar.astro";
+import EventCalendar from "@/views/EventCalendar.tsx";
 
 const navigation = [
   {
@@ -37,7 +37,7 @@ const navigation = [
   <Hero />
   <Sponsors />
   <WhoWeAre />
-  <EventCalendar />
+  <EventCalendar client:only />
   <BuyTicket />
   <Footer />
 </Layout>

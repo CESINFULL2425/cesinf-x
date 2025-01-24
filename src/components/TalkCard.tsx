@@ -34,23 +34,17 @@ const TalkCard: FC<TalkCardProps> = ({
         </DialogDescription>
         <DialogFooter className="text-sm text-neutral-500">
           <ul className="flex flex-row flex-wrap w-full gap-x-1 justify-center sm:justify-start">
-            {speakers.map((speaker, i) => {
-              if (i === speakers.length - 1)
-                return (
-                  <li>
-                    <small key={speaker} className="text-nowrap">
-                      {speaker}
-                    </small>
-                  </li>
-                );
-              return (
-                <li>
-                  <small key={speaker} className="text-nowrap">
-                    {speaker},{" "}
-                  </small>
+            {speakers.map((speaker, i) =>
+              i === speakers.length - 1 ? (
+                <li key={speaker}>
+                  <small className="text-nowrap">{speaker}</small>
                 </li>
-              );
-            })}
+              ) : (
+                <li key={speaker}>
+                  <small className="text-nowrap">{speaker}, </small>
+                </li>
+              )
+            )}
           </ul>
         </DialogFooter>
       </DialogHeader>

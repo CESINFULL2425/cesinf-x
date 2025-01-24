@@ -1,5 +1,6 @@
-{
-  "day30": [
+[
+  [
+    { "completeHour": "09:00 - 09:30", "hour": "09:00" },
     {
       "smallTitle": "Acto de apertura",
       "title": "Acto de apertura",
@@ -11,11 +12,29 @@
       ]
     },
     {
+      "smallTitle": "",
+      "title": "",
+      "description": "",
+      "speakers": []
+    }
+  ],
+  [
+    { "completeHour": "09:30 - 10:00", "hour": "09:30" },
+    {
       "smallTitle": "Biohacking con Python",
       "title": "Biohacking con Python: cómo convertirse en el señor Burns fluorescente",
       "description": "Uso de python para explorar y modificar aspectos biológicos del cuerpo humano, uniendo tecnología y biología en el contexto del biohacking.",
       "speakers": ["Marina Moro López"]
     },
+    {
+      "smallTitle": "Punteros inteligentes",
+      "title": "Los punteros inteligentes, ¿Son inteligentes?",
+      "description": "¿Los punteros en C++ te han hecho perder más horas de las que quieres admitir? Si alguna vez has gritado “¡¿por qué segmentation fault?!” al compilador, esta charla es para ti. Con los punteros inteligentes (smart pointers), trabajar con memoria dinámica deja de ser una fuente de sufrimiento y se convierte en algo simple y seguro. En esta charla aprenderás a eliminar estos problemas de raíz y llevarás tu código a otro nivel.",
+      "speakers": ["Roberto Giménez Fuentes"]
+    }
+  ],
+  [
+    { "completeHour": "10:00 - 10:30", "hour": "10:00" },
     {
       "smallTitle": "FiveM GTA V. Crea tu propio server",
       "title": "Crea tu Propio Universo con GTA V: Creación de servidores personalizados con FiveM.",
@@ -23,11 +42,29 @@
       "speakers": ["Daniel Alejandro Álvarez Casablanca"]
     },
     {
+      "smallTitle": "Clean Code",
+      "title": "SOLID, YAGNI... o cómo hacer clean code",
+      "description": "En esta charla, exploraremos los principios fundamentales de Clean Code que te ayudarán a escribir código limpio, eficiente y fácil de mantener desde el principio de tu carrera. A través de acrónimos populares en la industria como KISS, YAGNI o SOLID, descubriremos cómo estos conceptos se traducen en prácticas concretas.",
+      "speakers": ["Héctor Martín Armas", "Alberto González Álvarez"]
+    }
+  ],
+  [
+    { "completeHour": "10:30 - 11:00", "hour": "10:30" },
+    {
       "smallTitle": "TIC y Sanidad",
       "title": "TIC y Sanidad: Uso de tecnologías de la información en el sector sanitario",
       "description": "Hablaremos del mundo Sanitario y las Tecnologías de la Información. Los aspectos más relevantes. Las oportunidades, retos y desafío a las que se enfrenta la informática en el mundo sanitario.",
       "speakers": ["Carlos Bermúdez Pérez"]
     },
+    {
+      "smallTitle": "Introducción a las metaheurísticas",
+      "title": "Introducción a las metaheurísticas: estrategias inteligentes para resolver problemas complejos",
+      "description": "El objetivo de esta charla es ofrecer a los participantes una comprensión básica de las metaheurísticas, entendiendo cómo estas técnicas pueden resolver problemas de optimización combinatoria de manera eficiente. En definitiva, se busca que los asistentes comprendan los principios detrás de las metaheurísticas y puedan identificar escenarios donde estos métodos resultan útiles, especialmente cuando los métodos exactos se vuelven inviables.",
+      "speakers": ["Gara Miranda Valladares"]
+    }
+  ],
+  [
+    { "completeHour": "11:00 - 11:30", "hour": "11:00" },
     {
       "smallTitle": "Traductor lenguaje de signos con IA",
       "title": "Cómo se construye un Traductor de Lenguaje de Signos con IA",
@@ -39,11 +76,34 @@
       ]
     },
     {
+      "smallTitle": "Criptografía post-cuántica",
+      "title": "Introducción a la criptografía post-cuántica",
+      "description": "El avance y la amenaza que representa la computación cuántica plantean desafíos significativos para la seguridad de la información. Esta situación ha generado la necesidad imperiosa de desarrollar sistemas criptográficos capaces de resistir ataques cuánticos. En este contexto, la criptografía post-cuántica ha surgido como un campo de investigación crucial. Sin embargo, uno de los principales desafíos que enfrenta este campo es la escasez de recursos disponibles debido al nacimiento emergente de la misma. En 2022 se publicaron los nuevos estándares tanto de cifrado como de firma digital actuales: CRYSTALS - Kyber y CRYSTALS - Dilithium. Estos algoritmos se basan en un interesante objeto algebraico que combina reducciones modulares, matrices y polinomios: los retículos.",
+      "speakers": ["Édgar Pérez Ramos"]
+    }
+  ],
+  [
+    { "completeHour": "11:30 - 12:30", "hour": "11:30" },
+    { "type": "break" },
+    { "type": "break" }
+  ],
+  [
+    { "completeHour": "12:30 - 13:00", "hour": "12:30" },
+    {
       "smallTitle": "Informática en Medicina",
       "title": "Aplicaciones de la Informática en Medicina realizadas en nuestra ESIT",
       "description": "En esta charla comentaremos algunas aplicaciones concretas de la Informática en el campo de la Medicina realizadas en nuestra escuela. Nos centraríamos en las aplicaciones en las que los estudiantes de Informática han colaborado con nosotros directamente - hay muchos desarrollos donde compañeros suyos han desarrollado su TFG, TFM, etc. Nos gustaría que vieran cómo pueden ustedes seguir colaborando en este tema tan útil y apasionante.",
       "speakers": ["Silvia Alayón Miranda", "Rafael Arnay del Arco"]
     },
+    {
+      "smallTitle": "Atención hospitalarIA",
+      "title": "Atención hospitalarIA del futuro",
+      "description": "Conoce las nuevas técnicas de Deep Learning y NLP que han ganado el premio Nobel de Química 2024, para mejorar la asistencia sanitaria en los hospitales e investigación científica. En esta charla introductoria, veremos herramientas que se usan en el mundo de la IA aplicada a la salud, como reconocimiento de imágenes de rayos X o de manchas en la piel con potencial cancerígeno que usan técnicas de Computer Vision o la automatización de informes médicos con técnicas de procesamiento de lenguaje natural. También veremos ejemplos reales de Google DeepMind sobre cómo están a la vanguardia de este sector. Aportan modelos como AlphaFold, galardonado con el Premio Nobel de Química 2024, para la predicción de la estructura 3D de las proteínas o Med-PaLM 2, la IA conversacional de Google especialmente entrenada en el ámbito médico. Y lo mejor es que tú puedes probarlo y en esta charla verás que con Python todo es más fácil!",
+      "speakers": ["Luis Merino Ulizarna"]
+    }
+  ],
+  [
+    { "completeHour": "13:00 - 13:30", "hour": "13:00" },
     {
       "smallTitle": "Datos abiertos con IA generativa",
       "title": "Mi primer proyecto de datos abiertos usando IA generativa",
@@ -51,11 +111,34 @@
       "speakers": ["José Alberto Pérez Melián"]
     },
     {
+      "smallTitle": "Hacking Web",
+      "title": "Hacking Web: De la teoría a la acción",
+      "description": "En esta charla se ofrecerá una explicación sencilla sobre las principales vulnerabilidades web que afectan a la seguridad de las aplicaciones. Entre los temas que se abordarán, se destacan las inyecciones SQL (SQLI), la inclusión de archivos locales (LFI) y el control de acceso roto (Broken Access Control). A lo largo de la presentación, no solo se discutirá en qué consisten estas vulnerabilidades y cómo pueden comprometer los sistemas, sino que también se realizarán demostraciones prácticas de los ataques. El objetivo es que los asistentes comprendan cómo los atacantes explotan estas debilidades de una forma práctica y amena.",
+      "speakers": ["Omar Suárez Doro", "Jonay Faas García"]
+    }
+  ],
+  [
+    { "completeHour": "13:30 - 15:00", "hour": "13:30" },
+    { "type": "break" },
+    { "type": "break" }
+  ],
+  [
+    { "completeHour": "15:00 - 15:30", "hour": "15:00" },
+    {
       "smallTitle": "Sobrevivir al Mundo Tech",
       "title": "Sobrevivir al Mundo Tech: Lo que no nos contaron.",
       "description": "Esta charla va a tratar sobre cómo prepararnos para dar el salto al mundo laboral en programación, compartiendo consejos y experiencias de quienes ya hemos pasado por ahí. Vamos a hablar mucho sobre la importancia de hacer networking y cómo las comunidades tecnológicas pueden ser una gran ayuda en nuestro crecimiento profesional. También vamos a tocar el tema de tener expectativas realistas y ser exigentes con las oportunidades laborales, buscando siempre un balance entre aprender y cuidar nuestra calidad de vida. Destacaremos la importancia de las buenas prácticas en programación, que son clave para escribir código que sea sostenible y de calidad. Hablaremos sobre el testing, la estructura del código y cómo las \"katas\" pueden ayudarnos a mejorar nuestra técnica. También mencionaremos recursos para seguir aprendiendo y cómo avanzar paso a paso en nuestra carrera, ofreciéndonos una guía para esos primeros pasos importantes.",
       "speakers": ["Daniel Nuez Wehbe", "Ariane Zanardi Francisco"]
     },
+    {
+      "smallTitle": "Desarrollo con GODot",
+      "title": "GODot: Una posibilidad para desarrolladoras casuales (y no tan casuales)",
+      "description": "La industria del videojuego siempre ha estado muy polarizada a la hora de elegir un motor gráfico en el que desarrollar un juego. Si es en 2D Unity, si es en 3D Unreal Engine. Con las recientes polémicas con Unity y la popularidad del open source, Godot ganó mucha fama. En esta charla verás las características que tiene Godot y lo compararemos con su mayor rival: Unity.",
+      "speakers": ["Diego Díaz Morón"]
+    }
+  ],
+  [
+    { "completeHour": "15:30 - 16:00", "hour": "15:30" },
     {
       "smallTitle": "Trabajo remoto",
       "title": "El Cuento del Trabajo Remoto.",
@@ -63,11 +146,29 @@
       "speakers": ["Juan Antonio Gómez Cabo"]
     },
     {
+      "smallTitle": "Computación Neurosimbólica",
+      "title": "Computación Neurosimbólica",
+      "description": "La computación neurosimbólica es una tecnología para crear sistemas de inteligencia artificial, que constituye una alternativa a las redes neuronales clásicas porque incorporan en su arquitectura elementos de los sistemas clásicos, por ejemplo la utilización de sistemas de reglas. En esta charla nos centraremos en los fundamentos y propuestas actuales relacionadas con este tipo de técnicas.",
+      "speakers": ["José Ignacio Estévez Damas"]
+    }
+  ],
+  [
+    { "completeHour": "16:00 - 16:30", "hour": "16:00" },
+    {
       "smallTitle": "Jueguitos canarios",
       "title": "Hacer Jueguitos en Canarias... y otras tantas cosas",
       "description": "Hablamos de qué va eso de crear videojuegos, las salidas profesionales que tenemos en Canarias, y cómo muchas de las ideas que se nos transmiten desde la sociedad y las instituciones están bastante desatinadas. Y por supuesto, con un poquito de cachondeo.",
       "speakers": ["David Carmona Ballester"]
     },
+    {
+      "smallTitle": "Fundamentos de Git",
+      "title": "Fundamentos de Git",
+      "description": "Nos introduciremos en el mundo de los sistemas de control de versiones, comprendiendo la importancia y los beneficios que aportan al desarrollo de software. Se enfocarán en los conceptos básicos y en el manejo de Git en un entorno local, sentando las bases para un uso efectivo de esta herramienta.",
+      "speakers": ["Miguel Ignacio Cabrera San Gil"]
+    }
+  ],
+  [
+    { "completeHour": "16:30 - 19:00", "hour": "16:30" },
     {
       "smallTitle": "Mesa redonda: Informática en medicina",
       "title": "Mesa redonda: Informática en medicina",
@@ -79,68 +180,6 @@
         "Rafael Arnay del Arco",
         "Dr. Valentín Tinguaro Díaz Alemán"
       ]
-    }
-  ],
-  "day31": [
-    {
-      "smallTitle": "",
-      "title": "",
-      "description": "",
-      "speakers": []
-    },
-    {
-      "smallTitle": "Punteros inteligentes",
-      "title": "Los punteros inteligentes, ¿Son inteligentes?",
-      "description": "¿Los punteros en C++ te han hecho perder más horas de las que quieres admitir? Si alguna vez has gritado “¡¿por qué segmentation fault?!” al compilador, esta charla es para ti. Con los punteros inteligentes (smart pointers), trabajar con memoria dinámica deja de ser una fuente de sufrimiento y se convierte en algo simple y seguro. En esta charla aprenderás a eliminar estos problemas de raíz y llevarás tu código a otro nivel.",
-      "speakers": ["Roberto Giménez Fuentes"]
-    },
-    {
-      "smallTitle": "Clean Code",
-      "title": "SOLID, YAGNI... o cómo hacer clean code",
-      "description": "En esta charla, exploraremos los principios fundamentales de Clean Code que te ayudarán a escribir código limpio, eficiente y fácil de mantener desde el principio de tu carrera. A través de acrónimos populares en la industria como KISS, YAGNI o SOLID, descubriremos cómo estos conceptos se traducen en prácticas concretas.",
-      "speakers": ["Héctor Martín Armas", "Alberto González Álvarez"]
-    },
-    {
-      "smallTitle": "Introducción a las metaheurísticas",
-      "title": "Introducción a las metaheurísticas: estrategias inteligentes para resolver problemas complejos",
-      "description": "El objetivo de esta charla es ofrecer a los participantes una comprensión básica de las metaheurísticas, entendiendo cómo estas técnicas pueden resolver problemas de optimización combinatoria de manera eficiente. En definitiva, se busca que los asistentes comprendan los principios detrás de las metaheurísticas y puedan identificar escenarios donde estos métodos resultan útiles, especialmente cuando los métodos exactos se vuelven inviables.",
-      "speakers": ["Gara Miranda Valladares"]
-    },
-    {
-      "smallTitle": "Criptografía post-cuántica",
-      "title": "Introducción a la criptografía post-cuántica",
-      "description": "El avance y la amenaza que representa la computación cuántica plantean desafíos significativos para la seguridad de la información. Esta situación ha generado la necesidad imperiosa de desarrollar sistemas criptográficos capaces de resistir ataques cuánticos. En este contexto, la criptografía post-cuántica ha surgido como un campo de investigación crucial. Sin embargo, uno de los principales desafíos que enfrenta este campo es la escasez de recursos disponibles debido al nacimiento emergente de la misma. En 2022 se publicaron los nuevos estándares tanto de cifrado como de firma digital actuales: CRYSTALS - Kyber y CRYSTALS - Dilithium. Estos algoritmos se basan en un interesante objeto algebraico que combina reducciones modulares, matrices y polinomios: los retículos.",
-      "speakers": ["Édgar Pérez Ramos"]
-    },
-    {
-      "smallTitle": "Atención hospitalarIA",
-      "title": "Atención hospitalarIA del futuro",
-      "description": "Conoce las nuevas técnicas de Deep Learning y NLP que han ganado el premio Nobel de Química 2024, para mejorar la asistencia sanitaria en los hospitales e investigación científica. En esta charla introductoria, veremos herramientas que se usan en el mundo de la IA aplicada a la salud, como reconocimiento de imágenes de rayos X o de manchas en la piel con potencial cancerígeno que usan técnicas de Computer Vision o la automatización de informes médicos con técnicas de procesamiento de lenguaje natural. También veremos ejemplos reales de Google DeepMind sobre cómo están a la vanguardia de este sector. Aportan modelos como AlphaFold, galardonado con el Premio Nobel de Química 2024, para la predicción de la estructura 3D de las proteínas o Med-PaLM 2, la IA conversacional de Google especialmente entrenada en el ámbito médico. Y lo mejor es que tú puedes probarlo y en esta charla verás que con Python todo es más fácil!",
-      "speakers": ["Luis Merino Ulizarna"]
-    },
-    {
-      "smallTitle": "Hacking Web",
-      "title": "Hacking Web: De la teoría a la acción",
-      "description": "En esta charla se ofrecerá una explicación sencilla sobre las principales vulnerabilidades web que afectan a la seguridad de las aplicaciones. Entre los temas que se abordarán, se destacan las inyecciones SQL (SQLI), la inclusión de archivos locales (LFI) y el control de acceso roto (Broken Access Control). A lo largo de la presentación, no solo se discutirá en qué consisten estas vulnerabilidades y cómo pueden comprometer los sistemas, sino que también se realizarán demostraciones prácticas de los ataques. El objetivo es que los asistentes comprendan cómo los atacantes explotan estas debilidades de una forma práctica y amena.",
-      "speakers": ["Omar Suárez Doro", "Jonay Faas García"]
-    },
-    {
-      "smallTitle": "Desarrollo con GODot",
-      "title": "GODot: Una posibilidad para desarrolladoras casuales (y no tan casuales)",
-      "description": "La industria del videojuego siempre ha estado muy polarizada a la hora de elegir un motor gráfico en el que desarrollar un juego. Si es en 2D Unity, si es en 3D Unreal Engine. Con las recientes polémicas con Unity y la popularidad del open source, Godot ganó mucha fama. En esta charla verás las características que tiene Godot y lo compararemos con su mayor rival: Unity.",
-      "speakers": ["Diego Díaz Morón"]
-    },
-    {
-      "smallTitle": "Computación Neurosimbólica",
-      "title": "Computación Neurosimbólica",
-      "description": "La computación neurosimbólica es una tecnología para crear sistemas de inteligencia artificial, que constituye una alternativa a las redes neuronales clásicas porque incorporan en su arquitectura elementos de los sistemas clásicos, por ejemplo la utilización de sistemas de reglas. En esta charla nos centraremos en los fundamentos y propuestas actuales relacionadas con este tipo de técnicas.",
-      "speakers": ["José Ignacio Estévez Damas"]
-    },
-    {
-      "smallTitle": "Fundamentos de Git",
-      "title": "Fundamentos de Git",
-      "description": "Nos introduciremos en el mundo de los sistemas de control de versiones, comprendiendo la importancia y los beneficios que aportan al desarrollo de software. Se enfocarán en los conceptos básicos y en el manejo de Git en un entorno local, sentando las bases para un uso efectivo de esta herramienta.",
-      "speakers": ["Miguel Ignacio Cabrera San Gil"]
     },
     {
       "smallTitle": "Mesa redonda: IA",
@@ -153,4 +192,4 @@
       ]
     }
   ]
-}
+]
