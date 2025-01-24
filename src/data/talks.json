@@ -3,7 +3,7 @@
     {
       "smallTitle": "Acto de apertura",
       "title": "Acto de apertura",
-      "description": "Inauguración del evento.",
+      "description": "",
       "speakers": [
         "José Ramón Morera Campos",
         "Leopoldo Sánchez Acosta",
@@ -67,6 +67,18 @@
       "title": "Hacer Jueguitos en Canarias... y otras tantas cosas",
       "description": "Hablamos de qué va eso de crear videojuegos, las salidas profesionales que tenemos en Canarias, y cómo muchas de las ideas que se nos transmiten desde la sociedad y las instituciones están bastante desatinadas. Y por supuesto, con un poquito de cachondeo.",
       "speakers": ["David Carmona Ballester"]
+    },
+    {
+      "smallTitle": "Mesa redonda: Informática en medicina",
+      "title": "Mesa redonda: Informática en medicina",
+      "description": "",
+      "speakers": [
+        "Marina Moro López",
+        "Carlos Bermúdez Pérez",
+        "Silvia Alayón Miranda",
+        "Rafael Arnay del Arco",
+        "Dr. Valentín Tinguaro Díaz Alemán"
+      ]
     }
   ],
   "day31": [
@@ -129,6 +141,16 @@
       "title": "Fundamentos de Git",
       "description": "Nos introduciremos en el mundo de los sistemas de control de versiones, comprendiendo la importancia y los beneficios que aportan al desarrollo de software. Se enfocarán en los conceptos básicos y en el manejo de Git en un entorno local, sentando las bases para un uso efectivo de esta herramienta.",
       "speakers": ["Miguel Ignacio Cabrera San Gil"]
+    },
+    {
+      "smallTitle": "Mesa redonda: IA",
+      "title": "Mesa redonda: IA",
+      "description": "",
+      "speakers": [
+        "Luis Merino Ulizarna",
+        "José Ignacio Estévez Damas",
+        "José Alberto Pérez Melián"
+      ]
     }
   ]
 }
