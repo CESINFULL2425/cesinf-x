@@ -170,8 +170,8 @@
   [
     { "completeHour": "16:30 - 19:00", "hour": "16:30" },
     {
-      "smallTitle": "Mesa redonda: Informática en medicina",
-      "title": "Mesa redonda: Informática en medicina",
+      "smallTitle": "Mesa redonda: Bits y bisturí",
+      "title": "Bits y bisturí: la revolución digital en Salud",
       "description": "",
       "speakers": [
         "Marina Moro López",
@@ -183,7 +183,7 @@
     },
     {
       "smallTitle": "Mesa redonda: IA",
-      "title": "Mesa redonda: IA",
+      "title": "IA: la nueva frontera",
       "description": "",
       "speakers": [
         "Luis Merino Ulizarna",
