@@ -1,88 +1,21 @@
 ---
 import Sponsor from "../components/Sponsor.astro";
+import data from "../data/sponsors.json";
 ---
 
 <article id="sponsors" class="ctm-container">
   <div class="centered">
-    <Sponsor
-      url="https://clickcomunicacion.es/"
-      image="/sponsors/click_comunicacion.svg"
-      category="diamond"
-    />
+    {data.diamond.map((sponsor) => <Sponsor category="diamond" {...sponsor} />)}
   </div>
   <div class="centered">
-    <Sponsor
-      url="https://www.grupoinetel.com/"
-      image="/sponsors/inetel.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://www.galletasbandama.com/"
-      image="/sponsors/bandama.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://www.ull.es/centros/escuela-superior-de-ingenieria-y-tecnologia/"
-      image="/sponsors/esit.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="http://www.isola-alimentacion.es/"
-      image="/sponsors/isola.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://www.redbull.com/es-es"
-      image="/sponsors/redbull.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://aperitivossnack.com/munchitos/"
-      image="/sponsors/munchitos.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://libbys.es/"
-      image="/sponsors/libbys.webp"
-      category="platinum"
-    />
-    <Sponsor
-      url="https://fg.ull.es/"
-      image="/sponsors/fgull.webp"
-      category="platinum"
-    />
+    {
+      data.platinum.map((sponsor) => (
+        <Sponsor category="platinum" {...sponsor} />
+      ))
+    }
   </div>
   <div class="centered">
-    <Sponsor
-      url="https://www.holasoft.es/"
-      image="/sponsors/holasoft.webp"
-      category="gold"
-    />
-    <Sponsor
-      url="https://www.acidtango.com/"
-      image="/sponsors/acidtango.webp"
-      category="gold"
-    />
-    <Sponsor
-      url="https://www.ull.es/catedras/catedrabob/"
-      image="/sponsors/catedrabob.webp"
-      category="gold"
-    />
-    <Sponsor
-      url="https://www.ull.es/catedras/catedra-ciberseguridad-binter/"
-      image="/sponsors/catedrabinter.webp"
-      category="gold"
-    />
-    <Sponsor
-      url="https://pythoncanarias.es/"
-      image="/sponsors/pythoncanarias.webp"
-      category="gold"
-    />
-    <Sponsor
-      url="https://es.python.org/"
-      image="/sponsors/pythonespaña.webp"
-      category="gold"
-    />
+    {data.gold.map((sponsor) => <Sponsor category="gold" {...sponsor} />)}
   </div>
 </article>
 

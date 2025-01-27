@@ -1,0 +1,68 @@
+{
+  "diamond": [
+    {
+      "url": "https://clickcomunicacion.es/",
+      "image": "/sponsors/click_comunicacion.svg"
+    }
+  ],
+  "platinum": [
+    {
+      "url": "https://www.grupoinetel.com/",
+      "image": "/sponsors/inetel.webp"
+    },
+    {
+      "url": "https://www.galletasbandama.com/",
+      "image": "/sponsors/bandama.webp"
+    },
+    {
+      "url": "https://www.ull.es/centros/escuela-superior-de-ingenieria-y-tecnologia/",
+      "image": "/sponsors/esit.webp"
+    },
+    {
+      "url": "http://www.isola-alimentacion.es/",
+      "image": "/sponsors/isola.webp"
+    },
+    {
+      "url": "https://www.redbull.com/es-es",
+      "image": "/sponsors/redbull.webp"
+    },
+    {
+      "url": "https://aperitivossnack.com/munchitos/",
+      "image": "/sponsors/munchitos.webp"
+    },
+    {
+      "url": "https://libbys.es/",
+      "image": "/sponsors/libbys.webp"
+    },
+    {
+      "url": "https://fg.ull.es/",
+      "image": "/sponsors/fgull.webp"
+    }
+  ],
+  "gold": [
+    {
+      "url": "https://www.holasoft.es/",
+      "image": "/sponsors/holasoft.webp"
+    },
+    {
+      "url": "https://www.acidtango.com/",
+      "image": "/sponsors/acidtango.webp"
+    },
+    {
+      "url": "https://www.ull.es/catedras/catedrabob/",
+      "image": "/sponsors/catedrabob.webp"
+    },
+    {
+      "url": "https://www.ull.es/catedras/catedra-ciberseguridad-binter/",
+      "image": "/sponsors/catedrabinter.webp"
+    },
+    {
+      "url": "https://pythoncanarias.es/",
+      "image": "/sponsors/pythoncanarias.webp"
+    },
+    {
+      "url": "https://es.python.org/",
+      "image": "/sponsors/pythonespaña.webp"
+    }
+  ]
+}
