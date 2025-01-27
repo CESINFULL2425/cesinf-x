@@ -3,7 +3,7 @@ import HackerCard from "./HackerCard";
 import MeteordCard from "./MeteorCard";
 
 const Activities: FC = () => (
-  <div className="flex gap-4 w-full max-w-[1300px] justify-center md:justify-between flex-wrap">
+  <div className="flex gap-4 w-full max-w-[1300px] justify-center xl:justify-between flex-wrap">
     <HackerCard title="Hackathon" hours="Miércoles 13:00-14:00">
       <p className="text-white mt-4 text-sm font-light">
         <a
