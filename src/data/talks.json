@@ -169,7 +169,12 @@
     }
   ],
   [
-    { "completeHour": "16:30 - 19:00", "hour": "16:30" },
+    { "completeHour": "16:30 - 17:00", "hour": "16:30" },
+    { "type": "break" },
+    { "type": "break" }
+  ],
+  [
+    { "completeHour": "17:00 - 19:00", "hour": "17:00" },
     {
       "smallTitle": "Mesa redonda: Bits y bisturí",
       "title": "Bits y bisturí: la revolución digital en Salud",
