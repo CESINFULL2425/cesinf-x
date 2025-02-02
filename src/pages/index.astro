@@ -5,7 +5,6 @@ import NavBar from "../components/NavBar.astro";
 import Hero from "../views/Hero.astro";
 import Sponsors from "../views/Sponsors.astro";
 import WhoWeAre from "../views/WhoWeAre.astro";
-import BuyTicket from "../views/BuyTicket.astro";
 import EventCalendar from "@/views/EventCalendar.tsx";
 
 const navigation = [
@@ -25,10 +24,6 @@ const navigation = [
     name: "Calendario del evento",
     path: "#calendar",
   },
-  {
-    name: "Compra tu entrada!",
-    path: "#buy-ticket",
-  },
 ];
 ---
 
@@ -38,6 +33,5 @@ const navigation = [
   <Sponsors />
   <WhoWeAre />
   <EventCalendar client:only />
-  <BuyTicket />
   <Footer />
 </Layout>
